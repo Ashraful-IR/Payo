@@ -19,6 +19,7 @@
     <!-- deisyUI-import -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
 
     <style>
         * {
@@ -28,7 +29,27 @@
 
 </head>
 
-<body class="min-h-screen max-w-md mx-auto">
+<body class="min-h-screen max-w-md mx-auto pt-40">
+    <div class="logo w-[200px] pt-32 mx-auto">
+        <img src="/assets/Logo-full.png" alt="">
+    </div>
+    <div class="form pt-10">
+        <div class="card w-full max-w-sm shrink-0 mx-auto">
+            <div class="card-body">
+                <fieldset class="fieldset ">
+                    <label class="label text-[16px] font-medium text-[#080808]">Mobile Number</label>
+                    <input type="text" id="mobile-number" class="input text-4 font-light rounded-full w-full " placeholder="Mobile Number" />
+                    <br>
+                    <label class="label text-[16px] font-medium text-[#080808]">4 Digit Pin</label>
+                    <input type="password" id="pin" class="input text-4 font-light rounded-full w-full"
+                        placeholder="Enter 4 Digit Pin" />
+                    <br>
+                    <button id="login-btn" class="btn btn-primary rounded-full mt-4">Login</button>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <script src="/script/login.js"></script>
 </body>
 
 </html>
